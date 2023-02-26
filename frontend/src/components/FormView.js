@@ -46,9 +46,12 @@ class FormView extends Component {
         withCredentials: true,
       },
       crossDomain: true,
-      success: (result) => {
-        document.getElementById('add-question-form').reset();
-        return;
+      // success: (result) => {
+      //   document.getElementById('add-question-form').reset();
+      //   // return;
+      // },
+      success: function(url) {
+        window.location.href = ("http://127.0.0.1:3000")
       },
       error: (error) => {
         alert('Unable to add question. Please try your request again');
