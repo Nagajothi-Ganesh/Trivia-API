@@ -149,7 +149,7 @@ The API will return three error types when requests fail:
     - Returns the questions from the page specified
     - Returns a list of questions, success value, total questions and list of categories.
 
-- Sample: `http://127.0.0.1:5000/questions?page=2`
+- Sample: `curl http://127.0.0.1:5000/questions?page=2`
 
 ```{
   "categories": {
